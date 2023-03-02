@@ -1,0 +1,28 @@
+muhammadusman@muhammadusman-virtual-machine:~/Desktop$ sudo top
+
+
+
+top - 15:10:19 up 11 min,  2 users,  load average: 0.44, 0.47, 0.38
+Tasks: 288 total,   2 running, 286 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.7 us,  3.2 sy,  0.0 ni, 88.9 id,  0.5 wa,  0.0 hi,  1.7 si,  0.0 st
+MiB Mem :   3888.8 total,   1651.9 free,   1466.9 used,    770.0 buff/cache
+MiB Swap:   2140.0 total,   2140.0 free,      0.0 used.   2148.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                             
+   1981 root      20   0    2792   1008    920 S   0.0   0.0   0:00.00 fusermount3                                                                                                                         
+   1986 muhamma+  20   0  606356  29464  21292 S   0.0   0.7   0:00.52 xdg-desktop-por                                                                                                                     
+   1993 muhamma+  20   0 2608504  28072  23200 S   0.0   0.7   0:00.20 gjs                                                                                                                                 
+   2024 muhamma+  20   0 2819060  73160  56552 S   0.0   1.8   0:02.55 gjs                                                                                                                                 
+   2035 muhamma+  20   0  532628  68524  51408 S   0.0   1.7   0:00.43 gsd-xsettings                                                                                                                       
+   2042 muhamma+  20   0  352900  24916  17864 S   0.0   0.6   0:00.31 xdg-desktop-por                                                                                                                     
+   2068 muhamma+  20   0  203192  25168  18012 S   0.0   0.6   0:00.22 ibus-x11                                                                                                                            
+   2104 muhamma+  20   0   44904  19288  11600 S   0.0   0.5   0:00.12 gnome-terminal                                                                                                                      
+   2105 muhamma+  20   0  392132  27680  20144 S   0.0   0.7   0:00.23 gnome-terminal.                                                                                                                     
+   2131 muhamma+  20   0   20152   5400   3932 S   0.0   0.1   0:00.06 bash                                                                                                                                
+   2184 muhamma+  20   0  428632  29600  21728 S   0.0   0.7   0:00.38 update-notifier                                                                                                                     
+   2538 root      20   0   23360   6164   5244 S   0.0   0.2   0:00.80 sudo                                                                                                                                
+   2539 root      20   0   23360    948      0 S   0.0   0.0   0:00.00 sudo                                                                                                                                
+
+
+
+
