@@ -1,0 +1,126 @@
+************************************
+UBUNTU BASH COMMAND
+************************************
+
+sudo apt update
+sudo apt install docker.io
+sudo groupadd docke
+sudo adduser Tom --shell /bin/bash
+sudo usermod -aG docker Tom
+id Tom
+sudo chown -R tom:tom /tmp/vault
+sudo chmod -R 770 /tmp/vault
+sudo chmod g+r /usr/bin/docker
+sudo chmod g+r /usr/sbin/docker
+alias k=kubectl
+alias d=docker
+sudo mkdir /tmp/mydocs
+sudo cp -R /etc /tmp/mydocs/
+cat score_sheet.txt
+
+
+******************************
+UBUNTU BASH EXECUTION
+*****************************
+
+muhammadusman@muhammadusman-virtual-machine:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  chromium-codecs-ffmpeg-extra gstreamer1.0-vaapi i965-va-driver
+  intel-media-va-driver libaacs0 libaom3 libass9 libavcodec58 libavformat58
+  libavutil56 libbdplus0 libblas3 libbluray2 libbs2b0 libchromaprint1
+  libcodec2-1.0 libdav1d5 libflite1 libgme0 libgsm1
+  libgstreamer-plugins-bad1.0-0 libigdgmm12 liblilv-0-0 libllvm15 libmfx1
+  libmysofa1 libnorm1 libopenmpt0 libpgm-5.3-0 libpostproc55 librabbitmq4
+  librubberband2 libserd-0-0 libshine3 libsnappy1v5 libsord-0-0 libsratom-0-0
+  libsrt1.4-gnutls libssh-gcrypt-4 libswresample3 libswscale5 libudfread0 ............
+
+----------------------------------------------------------------
+
+muhammadusman@muhammadusman-virtual-machine:~$ sudo adduser Tom --shell /bin/bash --force-badname
+Allowing use of questionable username.
+Adding user `Tom' ...
+Adding new group `Tom' (1001) ...
+Adding new user `Tom' (1001) with group `Tom' ...
+Creating home directory `/home/Tom' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for Tom
+Enter the new value, or press ENTER for the default
+	Full Name []: Muhammad Usman
+	Room Number []: 2249             
+	Work Phone []: 9920843
+	Home Phone []: 02132581306
+	Other []: 03212330941
+Is the information correct? [Y/n] y
+
+ ------------------------------------------------------
+
+muhammadusman@muhammadusman-virtual-machine:~$ id Tom
+uid=1001(Tom) gid=1001(Tom) groups=1001(Tom)
+
+------------------------------------------------------------
+muhammadusman@muhammadusman-virtual-machine:~$ sudo mkdir /tmp/vault
+muhammadusman@muhammadusman-virtual-machine:~$ sudo chown -R Tom:Tom /tmp/vault
+muhammadusman@muhammadusman-virtual-machine:~$ sudo chmod -R 770 /tmp/vault
+muhammadusman@muhammadusman-virtual-machine:~$ sudo chmod g+r /usr/bin/docker
+muhammadusman@muhammadusman-virtual-machine:~$ alias k=kubectl
+muhammadusman@muhammadusman-virtual-machine:~$ alias d=docker
+muhammadusman@muhammadusman-virtual-machine:~$ alias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias d='docker'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias k='kubectl'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+muhammadusman@muhammadusman-virtual-machine:~$ sudo mkdir /tmp/mydocs
+muhammadusman@muhammadusman-virtual-machine:~$ sudo cp -R /etc /tmp/mydocs/
+
+
+
+******************************************************
+UBUNTU BASH SCRIPT (.)
+#!/bin/bash
+
+# Take user inputs
+echo "Enter Tom's name:"
+read name
+
+echo "Enter the number of goals scored:"
+read goals
+
+echo "Enter the number of assists:"
+read assists
+
+echo "Enter the number of yellow cards:"
+read yellow_cards
+
+echo "Enter the number of red cards:"
+read red_cards
+
+# Calculate Tom's score
+score=$((goals*2 + assists - yellow_cards - red_cards))
+
+# Print Tom's score sheet
+echo "Tom's Score Sheet:"
+echo "Name: $name"
+echo "Goals: $goals"
+echo "Assists: $assists"
+echo "Yellow Cards: $yellow_cards"
+echo "Red Cards: $red_cards"
+echo "Score: $score"
+
+# Append completion date to the final file
+echo "I have completed my assignment on $(date)" >> score_sheet.txt
+
+# Print the whole content of the file on the screen
+
+
