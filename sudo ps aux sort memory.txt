@@ -1,0 +1,5 @@
+muhammadusman@muhammadusman-virtual-machine:~/Desktop$ sudo ps aux --sort=-%mem|head -n4
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+muhamma+    1641  5.1  6.8 4355288 272228 ?      Ssl  15:00   0:36 /usr/bin/gnome-shell
+muhamma+    2024  0.3  1.8 2819060 73160 ?       Sl   15:00   0:02 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:800:600:1:27:0:74:0:0
+muhamma+    1958  0.1  1.7 210544 69532 ?        S    15:00   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.UE6801 -listen 4 -listen 5 -displayfd 6 -initfd 7
