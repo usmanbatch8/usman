@@ -1,0 +1,5 @@
+muhammadusman@muhammadusman-virtual-machine:~/Desktop$ sudo ps aux --sort=-%cpu|head -n4
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         852  8.3  0.8 1392412 34348 ?       Ssl  14:59   1:05 /usr/lib/snapd/snapd
+muhamma+    1641  5.0  6.8 4355292 272240 ?      Ssl  15:00   0:37 /usr/bin/gnome-shell
+muhamma+    2110  1.1  1.4 568952 58848 ?        Ssl  15:00   0:08 /usr/libexec/gnome-terminal-server
